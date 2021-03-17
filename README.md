@@ -3,7 +3,7 @@
 Primbus: the Crying is a Python text-based adventure game based off the fanmade TTRPG splat of Chronicles of Darkness, Princess: The Hopeful.
 ## Installation
 
-Python 3.7 is needed to play this game. Python 3.7 to install Python.
+Python 3.7 is needed to play this game. [Python 3.7](https://www.python.org/downloads/) to install Python.
 ## Run the Program
 
 primbus.py
