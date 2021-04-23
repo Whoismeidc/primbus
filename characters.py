@@ -23,7 +23,7 @@ identity = {
 }
 
 # Items can be found in resources dot py. Resource[0]
-# is cash, healing[0] is a medkit, and weapon[0] is 
+# is cash, healing[0] is a medkit, and weapon[0] is
 # a knife.
 items = {
     'Shul': [resource[0], healing[0]],
