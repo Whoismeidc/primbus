@@ -20,10 +20,10 @@ print(items['Shul'])
 
 # Test environments
 for map in organizedmap1:
-  print(f"{str(map)}")
+    print(f"{str(map)}")
 
 for map in organizedmap2:
-  print(f"{str(map)}")
+    print(f"{str(map)}")
 
 # Test resources
 print(weapon[1])
