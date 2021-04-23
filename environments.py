@@ -17,7 +17,7 @@ neutral = [
   'N Open Field'
     ]
 
-# Friendly neighbourhoods give cash, which can be spent 
+# Friendly neighbourhoods give cash, which can be spent
 # on friendly business districts.
 
 friendly = [
@@ -35,18 +35,18 @@ map = []
 # This map is intended to be a 3 by 9. This creates 25
 # Open Field tiles,
 for tile in range(0, 26):
-  map.insert(tile, neutral[2])
+    map.insert(tile, neutral[2])
 
 # This replaces every six Open Fields with Friendly
-# Businesses, 
+# Businesses,
 for tile in range(5, 25, 6):
-  del map[tile]
-  map.insert(tile, friendly[1])
+    del map[tile]
+    map.insert(tile, friendly[1])
 
 # and this replaces every four tiles with enemy tiles.
 for tile in range(2, 22, 4):
-  del map[tile]
-  map.insert(tile, hostile[tile // 7])
+    del map[tile]
+    map.insert(tile, hostile[tile // 7])
 
 # Create the start tile
 del map[25]
@@ -56,7 +56,8 @@ map.insert(25, start)
 del map[0]
 map.insert(0, end)
 
-# A low-level map design that will change when making the actual game. The maps are ordered in rows of 3.
+# A low-level map design that will change when making the actual game.
+# The maps are ordered in rows of 3.
 map1 = [map[0], map[1], map[2]]
 map2 = [map[3], map[4], map[5]]
 map3 = [map[6], map[7], map[8]]
