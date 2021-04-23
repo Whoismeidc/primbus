@@ -10,3 +10,8 @@ Uploaded nest of assets
 ## Prelease V0.12
 
 Uploaded continuous play demonstration
+
+## Prelease V0.13
+
+Uploaded character, enemy, environment, and resource modules,
+for use in primbus.py
