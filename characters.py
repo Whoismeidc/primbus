@@ -5,6 +5,7 @@
 
 
 class Character:
+    '''Attributes for characters.'''
     def __init__(char, stamina, defense):
         char.health = 5 + stamina
         char.armor = 0
@@ -15,6 +16,7 @@ class Character:
 
 
 class Player(Character):
+    '''Attributes for player character.'''
     def __init__(player, stamina, defense, charm):
         super().__init__(stamina, defense)
         player.charm = charm
