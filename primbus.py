@@ -1,32 +1,39 @@
 # Course: CS 30
 # Quint: 4
-# Date created: 10/03/2021
-# Date last modified: 23/03/2021
+# Date created: 26/04/2021
+# Date last modified: 28/04/2021
 # Name: Mark Luu
-# Description: A demonstration of the application of
-# modules, complete with the creation of a map.
-
-from environments import *
-
-from resources import *
+# Description: Classes for a text-based RPG.
 
 from characters import *
+from environments import *
+from resources import *
 
-from enemies import *
+# Player will eventually have 100 map movements to win
+# the game.
 
+moves = 100
 
-# Test characters and resources
-print(items['Shul'])
+# Establish which tile is the player tile.
+bigmap.establish_tile()
 
-# Test environments
-for map in organizedmap1:
-    print(f"{str(map)}")
+while moves >= 0:
+    # Bug testing: checks which tile the player is on.
+    bigmap.check_tile()
+    print("Where would you like to go?")
+    move = input("Up, Down, Left, or Right?")
+    # The player can move in the four directions, in lower
+    # and upper case.
+    goodmoves = ['Up', 'Down', 'Left', 'Right']
 
-for map in organizedmap2:
-    print(f"{str(map)}")
+    if move.title() in goodmoves:
+        print("Going " + move + ".")
+        # If the player goes up, the player tile is 3 tiles
+        # less. If the player goes up, the player tile is 1
+        # tile less. Opposite for down and right.
+        bigmap.adjust_place(move.title())
+        bigmap.move_place()
+        update_map()
 
-# Test resources
-print(weapon[1])
-
-# Test enemies
-print(goon)
+    else:
+        print("I don't understand.")
