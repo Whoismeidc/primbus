@@ -15,3 +15,8 @@ Uploaded continuous play demonstration
 
 Uploaded character, enemy, environment, and resource modules,
 for use in primbus.py
+
+## Prelease V0.14
+
+Converted character, environment, resource modules to class modules
+Gave primbus.py continuous interactive play
