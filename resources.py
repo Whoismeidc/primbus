@@ -1,13 +1,40 @@
-# Resources are cash, and convert 1:1 to its equivalent
-# item. $10 goes to knives, sweaters, medkits, and any
-# boost. $100 gives a sword...
+# Items for the RPG game.
 
-resource = ['$10', '$100', '$1000', '$10000']
 
-weapon = ['knife', 'sword', 'greatsword', 'laser blade']
+class Explosive:
+    def __init__(bomb, cost, dammod):
+        bomb.dammod = dammod
+        bomb.cost = cost
 
-armor = ['sweater', 'kevlar', 'armor']
 
-healing = ['medkit', 'potion', 'ambrosia']
+class Flashbang(Explosive):
+    def __init__(flash, cost, dammod, accmod):
+        super().__init__(cost, dammod)
+        flash.accmod = accmod
 
-boost = ['flashbang', 'bomb', 'decoy']
+
+class Decoy:
+    def __init__(rope, escapechance):
+        rope.escapechance = escapechance
+
+
+class Healing:
+    def __init__(medkit, healing):
+        medkit.healing = healing
+
+
+class Money:
+    def __init__(stock, value):
+        stock.value = value
+
+
+class Armor:
+    def __init__(vest, cost, armor):
+        vest.cost = cost
+        vest.armor = armor
+
+
+class Weapon:
+    def __init__(knife, cost, damage):
+        knife.cost = cost
+        knife.damage = damage
