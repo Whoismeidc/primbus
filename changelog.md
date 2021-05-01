@@ -20,3 +20,10 @@ for use in primbus.py
 
 Converted character, environment, resource modules to class modules
 Gave primbus.py continuous interactive play
+
+## Prelease V0.2
+Removed unnecessary files
+Uploaded assets.py
+
+## Prelease V0.21
+Removed the basic map print instance from assets.py
