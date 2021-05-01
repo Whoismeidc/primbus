@@ -614,7 +614,6 @@ end = HostileTile('End', 'Boss')
 
 bigmap.replace_tile(start, 23, 24)
 bigmap.replace_tile(end, 24, 24)
-bigmap.basic_print_map()
 
 
 def print_map(scroll):
